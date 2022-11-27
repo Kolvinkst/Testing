@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <link href="js/fancybox-master/dist/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="js/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <link href="js/slick-1.8.1/slick/slick.css" rel="stylesheet">
+    <link href="js/slick-1.8.1/slick/slick-theme.css" rel="stylesheet">
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <img src="images/image 1.png" class="backPhoto">
+    <div class="popup"></div>
+    <div class="certWindow"></div>
+    <section class="order">
+        <img src="images/lazer-optic.png">
+        <button onclick="popup_window()" class="btn btn-primary">Записаться на приём</button>
+    </section>
+    <div class="fon">
+        <h1>Суденкова Марина Васильевна</h1>
+        <p>Катарактальный и рефракционный хирург со стажем работы более 15 лет.
+        Провел более 10 000 операций</p>
+        <section>
+        <h3>Сведения из сертификата специалиста</h3>
+        <h4>с 18.04.2018 по 18.04.2023</h4>
+        <p>Организация здравоохранения и общественное здоровье</p>
+        <h4>с 03.11.2019 по 03.11.2024</h4>
+        <p>Офтальмология</p>
+        </section>
+        <section>
+            <h3>Опыт работы</h3>
+            <h4>1998–2000</h4>
+            <p>Врач консультативной поликлиники ГКБ №1</p>
+            <h4>2000–2006</h4>
+            <p>Врач офтальмологического отделения №2 ГКБ №1</p>
+            <h4>2006–2008</h4>
+            <p>Врач клиники «Новые технологии»</p>
+            <h4>2008–2017</h4>
+            <p>Врач-офтальмолог офтальмологического отделения №1 МБЛПУ ГКБ №1</p>
+        </section>
+        <section>
+            <h3>Профессиональная деятельность</h3>
+            <p>
+                Проводит диагностику функциональной способности глазодвигательного аппарата.
+                Занимается проверкой остроты зрения, с коррекцией и без, подбор простой и сложной очковой, контактной
+                коррекции, измерение внутриглазного давления, проводит диагностику на аппаратах: Iol master 700,
+                Pentakam, OST, Oculyser , ALLEGRO Topolyzer, Humphrey.
+            </p>
+        </section>
+        <section>
+            <h3>Квалификация</h3>
+            <p>Высшая квалификационная категория</p>
+        </section>
+        <section>
+            <h3>Повышение квалификации</h3>
+            <h4>2013</h4>
+            <p>«Кераторефракционная лазерная хирургия для коррекции аметропии» обучающий курс, МНТК,
+            Чебоксары</p>
+            <h4>2013</h4>
+            <p>«105th Teaching course on Retinal and Vitreous Surgery» by Prof. Ingrid Kreissig</p>
+            <h4>2014</h4>
+            <p>«Факоэмульсификация катаракты» обучающий курс, КГМА, Казань</p>
+            <h4>2014</h4>
+            <p>Phacoemulsification and refractive surgery internship in Eye research centre & Dr. Agarwal`s eye hospital,
+            Chennai, India</p>
+        </section>
+        <section>
+            <h3>Награды и сертификаты</h3>
+        <div id="viewport">
+            <div class="slider" style="left: 0">
+                <!--Для показа сертификата необходимо кликнуть дважды по слайду-->
+                <div class="slide" id="cert1" onclick="viewCerticifate()"><img src="images/image 3.png" alt=""></div>
+                <div class="slide" id="cert2" onclick="viewCerticifate()"><img src="images/image 4.png" alt=""></div>
+                <div class="slide" id="cert3" onclick="viewCerticifate()"><img src="images/image 3.png" alt=""></div>
+                <div class="slide" id="cert4" onclick="viewCerticifate()"><img src="images/image 4.png" alt=""></div>
+                <div class="slide" id="cert5" onclick="viewCerticifate()"><img src="images/image 3.png" alt=""></div>
+                <div class="slide" id="cert6" onclick="viewCerticifate()"><img src="images/image 4.png" alt=""></div>
+            </div>
+        </div>
+        <div class="buttons">
+        <button class="prev" ><img src="images/image 5.png" alt=""></button>
+        <button class="next"><img src="images/image 6.png" alt=""></button>
+        </div>
+        </section>
+    </div>
+    <!--Скрипт показывает пустое окно при клике на кнопку под фото-->
+    <script src="js/okno.js"></script>
+    <!--Скрипт слайдера-->
+    <script src="js/changeSlide.js"></script>
+    <!--Скрипт показывает сертификат вверху страницы при двойном клике на фото сертификата на слайдере-->
+    <script src="js/viewCert.js"></script>
+</body>
+</html>
